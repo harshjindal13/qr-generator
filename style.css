@@ -1,80 +1,83 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #020000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #020000;
 }
 .container {
-  text-align: center;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
+	text-align: center;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 500px;
+	width: 100%;
 }
 .input-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 10px;
+	display: flex;
+	@media (max-width: 737px) {
+		flex-direction: column;
+	}
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	gap: 10px;
 }
 input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  font-size: 16px;
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	font-size: 16px;
 }
 button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007BFF;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+	padding: 10px 20px;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
 }
 button:hover {
-  background-color: #0056b3;
+	background-color: #0056b3;
 }
 button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
+	background-color: #cccccc;
+	cursor: not-allowed;
 }
 .qr-box {
-  margin-top: 20px;
-  display: none;
+	margin-top: 20px;
+	display: none;
 }
 .qr-box img {
-  max-width: 200px;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+	max-width: 200px;
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 .status-messages {
-  margin-top: 20px;
-  text-align: left;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f8f9fa;
+	margin-top: 20px;
+	text-align: left;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #f8f9fa;
 }
 .status-message {
-  margin: 5px 0;
-  padding: 5px 10px;
-  border-radius: 3px;
+	margin: 5px 0;
+	padding: 5px 10px;
+	border-radius: 3px;
 }
 .success {
-  color: #155724;
-  background-color: #d4edda;
+	color: #155724;
+	background-color: #d4edda;
 }
 .error {
-  color: #721c24;
-  background-color: #f8d7da;
+	color: #721c24;
+	background-color: #f8d7da;
 }
